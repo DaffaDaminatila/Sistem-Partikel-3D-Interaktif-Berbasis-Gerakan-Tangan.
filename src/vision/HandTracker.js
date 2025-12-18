@@ -72,6 +72,7 @@ export class HandTracker {
             });
         } else {
             console.warn("getUserMedia() is not supported by your browser");
+            document.getElementById('status').innerText = 'Error: Camera not supported. Using HTTPS?';
         }
     }
 
